@@ -1,4 +1,4 @@
-const { model, Schema } = require("mongoose");
+const { Schema } = require("mongoose");
 
 const VaccinationPointSchema = new Schema({
   name: {
@@ -12,10 +12,4 @@ const VaccinationPointSchema = new Schema({
   vaccines: [{ type: Schema.Types.ObjectId, ref: "Vaccine" }],
 });
 
-const VaccinationPoint = model(
-  "VaccinationPoint",
-  VaccinationPointSchema,
-  "vaccinationPoints"
-);
-
-module.exports = VaccinationPoint;
+module.exports = VaccinationPointSchema;
