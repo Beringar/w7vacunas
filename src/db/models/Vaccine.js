@@ -5,7 +5,7 @@ const VaccineSchema = new Schema({
     type: String,
     required: true,
   },
-  dose: {
+  doses: {
     type: Number,
     required: true,
   },

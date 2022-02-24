@@ -1,15 +1,14 @@
 const { model, Schema } = require("mongoose");
+const VaccinationPointSchema = require("../schemas/vaccinationPointSchema");
 
 const CitySchema = new Schema({
   name: {
     type: String,
     required: true,
   },
-  vaccinationPoints: [
-    { type: Schema.Types.ObjectId, ref: "VaccionationPoint" },
-  ],
+  vaccinationPoints: [VaccinationPointSchema],
 });
 
 const City = model("City", CitySchema, "cities");
 
-module.exports = City;
+module.exports = { City, VaccinationPointSchema };

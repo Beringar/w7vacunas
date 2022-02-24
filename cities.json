@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Barcelona",
+    "vaccinationPoints": [
+      {
+        "name": "Sant Isidor- Centre vacunal CAPSBE",
+        "location": {
+          "coordinates": [41.3853035, 2.1274393],
+          "address": "Carrer del Comte Borrell, 305"
+        },
+        "vaccines": []
+      },
+      {
+        "name": "Fira de Barcelona",
+        "location": {
+          "coordinates": [41.3726475, 2.1512986],
+          "address": "Avinguda Rius i Taulet, 12"
+        },
+        "vaccines": []
+      },
+      {
+        "name": "Facultat de Geografia i Història UB",
+        "location": {
+          "coordinates": [41.3832851, 2.1654357],
+          "address": "Carrer Montalegre, 6"
+        },
+        "vaccines": []
+      },
+      {
+        "name": "La Maquinista",
+        "location": {
+          "coordinates": [41.4405443, 2.1916226],
+          "address": "Carrer del Pont de Potosí, 2, Planta 0"
+        },
+        "vaccines": []
+      }
+    ]
+  }
+]

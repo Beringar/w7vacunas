@@ -1,4 +1,5 @@
 const { model, Schema } = require("mongoose");
+const VaccinationPointSchema = require("../schemas/vaccinationPointSchema");
 
 const UserSchema = new Schema({
   dni: {
@@ -6,9 +7,7 @@ const UserSchema = new Schema({
     required: true,
   },
   vaccinationPoint: {
-    type: Schema.Types.ObjectId,
-    ref: "VaccinationPoint",
-    required: true,
+    type: VaccinationPointSchema,
   },
   vaccine: { type: Schema.Types.ObjectId, ref: "Vaccine", required: true },
   doses: [{ type: Date }],
